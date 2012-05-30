@@ -1,0 +1,151 @@
+
+// TinyMCE button
+
+.wp_themeSkin span.mce_postinpost {
+	background:url('tinymce/page_attach.png') 0 -20px no-repeat;
+	&:hover {
+		background-position-y:0;		
+	}
+}
+
+
+// Dialog Styles
+.postinpost-dialog {
+
+	
+	.postinpost-dialog-content {
+		padding:10px;
+		height:383px;
+		overflow-y:scroll;
+		overflow-x:hidden;
+	}
+	
+	.postinpost-dialog-entries {
+		
+		ul {
+			
+			li {
+				width:100%;
+				overflow:auto;
+				padding:5px 0;
+				margin:0;
+				border-bottom:1px solid #dfdfdf;
+				&:last-child {
+					border-bottom:none;					
+				}
+				
+				h3 {
+					margin:0;					
+				}
+				
+				&.thumbnail {
+					
+					img {
+						
+						float:left;
+						width:100px;
+						height:100px;
+						
+					}
+					h3,p {
+						margin-left: 120px;
+					}
+				}
+				
+			}	
+		}
+		
+	}
+	
+
+	.postinpost-dialog-header {
+		margin: 0;
+		padding: 5px 5px 0;
+		font-weight: bold;
+		position: relative;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		background-color: #f9f9f9;
+		border-bottom-color: #dfdfdf;
+		
+	}
+	
+	.postinpost-dialog-footer {
+		background-color: #f9f9f9;
+		
+		padding:10px;
+		.major {
+			float:right;
+		}
+		.minor {
+			
+			
+		}
+		
+	}
+	
+	.error {
+		
+		padding:10px;
+		
+	}
+
+	// Copied from Uploader thing from wordpress to try to be somewhat consistent (even though tabs are different in other places )
+	.tabs {
+		list-style: none;
+		position: relative;
+		padding-left: 10px;
+		font-size: 12px;
+		font-weight: normal;
+		margin: 0 5px;
+		left: 0;
+		bottom: -1px;
+		float: none;
+		overflow: hidden;
+
+		a {
+			cursor:pointer;
+			color:#21759B;
+			padding: 0 7px;
+			display: block;
+			float: left;
+			line-height: 28px;
+			border-top-width: 1px;
+			border-top-style: solid;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			background-color: #f9f9f9;
+			border-color: #f9f9f9;
+			border-bottom-color: #dfdfdf;
+			&.current {
+				font-weight: normal;
+				padding-left: 6px;
+				padding-right: 6px;
+				-webkit-border-top-left-radius: 3px;
+				-webkit-border-top-right-radius: 3px;
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+				border-width: 1px;
+				border-style: solid;
+				background-color: white;
+				border-color: #dfdfdf #dfdfdf white;
+				color: #d54e21;
+			}
+		}
+		
+		li {
+			display: inline;
+			line-height: 200%;
+			list-style: none;
+			text-align: center;
+			white-space: nowrap;
+			margin: 0;
+			padding: 0;
+		}
+		
+		
+
+		
+	}
+	
+}
