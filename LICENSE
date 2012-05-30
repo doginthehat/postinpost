@@ -1,14 +1,20 @@
 Copyright (c) 2012 Dog in the hat
 
-Post In Post is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License 
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License, version 2, as 
+published by the Free Software Foundation.
 
-http://creativecommons.org/licenses/by-sa/3.0/
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-(Knock yourself out but keep sharing)
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-This plugin structure is inspired by the clean plugin structure from Mute Screamer by Ampt and re-uses its view loading mechanism (license and copyright apply).
+This plugin structure is inspired by the clean plugin structure from Mute Screamer by Ampt and re-uses its view loading mechanism (released under MIT license).
 (http://ampt.github.com/mute-screamer)
-Thanks for showing the way to clean plugins!
-
+   
 The TinyMCE editor icon is adapted from the famous FamFamFam Silk icon library by Mark James (http://www.famfamfam.com/lab/icons/silk/) released under the Creative Commons Attribution 2.5 License
-
+   

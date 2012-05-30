@@ -1,33 +1,42 @@
 <?php  if ( ! defined( 'ABSPATH' ) ) exit;
 /*
 Plugin Name: Post In Post
-Plugin URI: http://doginthehat.com.au/postinpost
+Plugin URI: https://github.com/doginthehat/postinpost
 Description: Import posts in other posts.
 Author: Doginthehat
-Version: 0.1.0
+Version: 0.1.1
 Author URI: http://doginthehat.com.au/
 */
 
 /*
- * Post In Post
- *
- * Copyright (c) 2012 Dog in the hat
- *
- * Post In Post is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License (i.e. Knock yourself out but keep sharing)
- *
- * http://creativecommons.org/licenses/by-sa/3.0/
- * 
- * Acknowledgements
- *
- * * This plugin structure is inspired by the clean plugin structure from Mute Screamer by Ampt and re-uses its view loading mechanism (license and copyright apply).
- *   (http://ampt.github.com/mute-screamer)
- *   Thanks for showing the way to clean plugins!
- *
- * * The TinyMCE editor icon is adapted from the famous FamFamFam Silk icon library by Mark James (http://www.famfamfam.com/lab/icons/silk/) released under the Creative Commons Attribution 2.5 License
- *
- * * Thanks to Gozer Studio (http://gozer.com.au) for the opportunity to develop this plugin.
- * 
- * * Thanks also to Johan Steen (http://johansteen.se/) for some inspiration taken from his Post Snippets plugin (http://wpstorm.net/wordpress-plugins/post-snippets/).
+   Post In Post
+   
+   Copyright (c) 2012 Dog in the hat
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License, version 2, as 
+   published by the Free Software Foundation.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+   
+   Acknowledgements
+   
+   * This plugin structure is inspired by the clean plugin structure from Mute Screamer by Ampt and re-uses its view loading mechanism (released under MIT license).
+     (http://ampt.github.com/mute-screamer)
+     Thanks for showing the way to clean plugins!
+   
+   * The TinyMCE editor icon is adapted from the famous FamFamFam Silk icon library by Mark James (http://www.famfamfam.com/lab/icons/silk/) released under the Creative Commons Attribution 2.5 License
+   
+   * Thanks to Gozer Studio (http://gozer.com.au) for the opportunity to develop this plugin.
+   
+   * Thanks also to Johan Steen (http://johansteen.se/) for some inspiration taken from his Post Snippets plugin (http://wpstorm.net/wordpress-plugins/post-snippets/).
  */
 
 
