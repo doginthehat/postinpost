@@ -1,0 +1,14 @@
+Copyright (c) 2012 Dog in the hat
+
+Post In Post is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License 
+
+http://creativecommons.org/licenses/by-sa/3.0/
+
+(Knock yourself out but keep sharing)
+
+This plugin structure is inspired by the clean plugin structure from Mute Screamer by Ampt and re-uses its view loading mechanism (license and copyright apply).
+(http://ampt.github.com/mute-screamer)
+Thanks for showing the way to clean plugins!
+
+The TinyMCE editor icon is adapted from the famous FamFamFam Silk icon library by Mark James (http://www.famfamfam.com/lab/icons/silk/) released under the Creative Commons Attribution 2.5 License
+
