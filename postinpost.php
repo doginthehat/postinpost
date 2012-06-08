@@ -279,15 +279,8 @@ class PostInPost {
 			{
 				$inception[] = $id;				
 				
-				$override_template = locate_template('postinpost-item', false );
-				
-				if ($override_template)
-					include($override_template);
-				else
-				{
-					PIP_Utils::view('postinpost-render',array('post'=>$post, 'length'=>$length ));
-				}
-				
+				self::render_the_post($post, $length);
+								
 				array_pop($inception);
 			}
 		
@@ -313,7 +306,21 @@ class PostInPost {
 		
 	}
 
+	
+	public static function render_the_post($post, $length)
+	{
+		// cheap cache
+		static $override_template = null;
+		
+		if ($override_template===null)
+			$override_template = locate_template('postinpost-item.php', false );
+		
 
+		if ($override_template)
+			include($override_template);
+		else
+			PIP_Utils::view('postinpost-render',array('post'=>$post, 'length'=>$length ));
+	}
 }
 
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {

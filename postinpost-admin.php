@@ -191,7 +191,7 @@ class PostInPost_Admin {
 				throw new Exception("There is nothing to insert.");
 
 			$insert_as = isset($_POST['insert_as']) ? $_POST['insert_as'] : 'inline';
-			$insert_length = isset($_POST['insert_length']) ? $_POST['insert_length'] : 'full';
+			$length = isset($_POST['insert_length']) ? $_POST['insert_length'] : 'full';
 			
 			$ids = explode(',',$ids);
 			$ids = array_map('intval',$ids);
@@ -204,25 +204,22 @@ class PostInPost_Admin {
 								'orderby'		=> 'title ID'
 							));
 			
-			$override_template = locate_template('postinpost-item', false );
 			
 			global $post;
 			ob_start();
 			
 			while($query->have_posts()): 
 				$query->the_post();
-				
+
 				if ($insert_as == 'shortcode')
 				{
-					echo "[postinpost id='{$post->ID}' length='{$insert_length}']\n";
+					echo "[postinpost id='{$post->ID}' length='{$length}']\n";
 				}
 				else
 				{
-					if ($override_template)
-						include($override_template);
-					else
-						PIP_Utils::view('postinpost-render',array('query'=>$query, 'post'=>$post, 'length'=>$insert_length ));
-						
+					PostInPost::render_the_post($post, $length);
+				
+											
 					
 				}
 				
@@ -244,6 +241,7 @@ class PostInPost_Admin {
 		
 		exit;		
 	}
+
 	
 	public function options_page()
 	{
