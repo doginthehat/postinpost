@@ -37,6 +37,10 @@ Use automatic installer or:
 
 == Changelog ==
 
-= 0.1 =
+= 0.1.2 =
+
+* Bug fixes (template override, console.log)
+
+= 0.1.1 =
 
 * Initial release
