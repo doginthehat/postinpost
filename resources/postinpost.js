@@ -136,7 +136,6 @@ var postinpost = (function($){
 							}
 							else
 							{
-								console.log("insertContent(%o)",data.output);
 								insertContent(data.output)
 							}
 						}, 
