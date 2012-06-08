@@ -4,7 +4,7 @@ Plugin Name: Post In Post
 Plugin URI: https://github.com/doginthehat/postinpost
 Description: Import posts in other posts.
 Author: Doginthehat
-Version: 0.1.2
+Version: 0.1.3
 Author URI: http://doginthehat.com.au/
 */
 

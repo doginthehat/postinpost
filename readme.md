@@ -1,10 +1,12 @@
 === Post In Post ===
-Contributors: doginthehat, gozer
+Contributors: doginthehat, gozerstudio
 Tags: posts, utility, tinymce, quicktags
 Requires at least: 3.3
 Tested from: 3.3.2
 Tested up to: 3.3.2
 Stable tag: trunk
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Post In Post
 
@@ -37,6 +39,10 @@ Use automatic installer or:
 
 == Changelog ==
 
+= 0.1.3 =
+
+* Licensing update
+
 = 0.1.2 =
 
 * Bug fixes (template override, console.log)
@@ -44,3 +50,4 @@ Use automatic installer or:
 = 0.1.1 =
 
 * Initial release
+
