@@ -148,16 +148,37 @@ class PostInPost_Admin {
 			if (!$post_type || !in_array($post_type, $this->plugin->post_types))	
 				throw new Exception("There is nothing to load.");
 				
-			$query = new WP_Query(array(
-								'post_type'		=> $post_type,
-								'posts_per_page'	=> -1,
-								'order'		=> 'ASC',
-								'orderby'		=> 'title ID'
-							));
+
+			$post_type_obj = get_post_type_object( $post_type );
+			
+			if (!$post_type_obj->hierarchical)
+			{
+				$args = array(
+							'post_type'		=> $post_type,
+							'posts_per_page'	=> -1,
+							'order'		=> 'DESC',
+							'orderby'		=> 'post_date ID'
+						);
+					
+			}
+			else
+			{
+				
+				$args = array(
+							'post_type'		=> $post_type,
+							'posts_per_page'	=> -1,
+							'order'		=> 'ASC',
+							'orderby'		=> 'menu_order ID',
+							'post_parent'	=> 0
+						);
+					
+			}
+			
+			$query = new WP_Query($args);
 			
 			remove_all_filters( 'excerpt_more' );
 			
-			$output = PIP_Utils::view('postinpost-list',array('query'=>$query, 'post_type'=>$post_type ), true);
+			$output = PIP_Utils::view('postinpost-list',array('query'=>$query, 'post_type'=>$post_type, 'hierarchical'=>$post_type_obj->hierarchical ), true);
 
 			$ret = array('success'=>true, 'output'=>$output);
 			

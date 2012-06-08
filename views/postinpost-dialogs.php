@@ -40,8 +40,8 @@
 						<label><input type='radio' name="insert_as" value="shortcode" /> Shortcode</label>
 						/
 						Length:  
-						<label><input type='radio' name="insert_length" value="full" checked="checked" /> Full</label>
-						<label><input type='radio' name="insert_length" value="excerpt" /> Excerpt</label>
+						<label><input type='radio' name="insert_length" value="full"/> Full</label>
+						<label><input type='radio' name="insert_length" value="excerpt" checked="checked" /> Excerpt</label>
 						
 					</div>
 				</div>

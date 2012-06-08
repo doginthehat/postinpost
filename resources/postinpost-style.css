@@ -5,8 +5,9 @@
 .postinpost-dialog .postinpost-dialog-entries ul li { width: 100%; overflow: auto; padding: 5px 0; margin: 0; border-bottom: 1px solid #dfdfdf; }
 .postinpost-dialog .postinpost-dialog-entries ul li:last-child { border-bottom: none; }
 .postinpost-dialog .postinpost-dialog-entries ul li h3 { margin: 0; }
-.postinpost-dialog .postinpost-dialog-entries ul li.thumbnail img { float: left; width: 100px; height: 100px; }
+.postinpost-dialog .postinpost-dialog-entries ul li.thumbnail img { float: left; width: 100px; height: 100px; margin-bottom: 10px; }
 .postinpost-dialog .postinpost-dialog-entries ul li.thumbnail h3, .postinpost-dialog .postinpost-dialog-entries ul li.thumbnail p { margin-left: 120px; }
+.postinpost-dialog .postinpost-dialog-entries ul ul { padding-left: 20px; border-top: 1px solid #dfdfdf; clear: both; }
 .postinpost-dialog .postinpost-dialog-header { margin: 0; padding: 5px 5px 0; font-weight: bold; position: relative; border-bottom-width: 1px; border-bottom-style: solid; background-color: #f9f9f9; border-bottom-color: #dfdfdf; }
 .postinpost-dialog .postinpost-dialog-footer { background-color: #f9f9f9; padding: 10px; }
 .postinpost-dialog .postinpost-dialog-footer .major { float: right; }

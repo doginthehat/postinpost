@@ -39,6 +39,10 @@ Use automatic installer or:
 
 == Changelog ==
 
+= 0.1.4 =
+
+* Hierarchical post types displayed with indent
+
 = 0.1.3 =
 
 * Licensing update
